@@ -1,0 +1,99 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def sub_func():\n",
+    "    raise ValueError(\"error in sub_func\")\n",
+    "def func():\n",
+    "    sub_func()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "func()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def sub_func():\n",
+    "    x = 0\n",
+    "    x = a + 3\n",
+    "def func():\n",
+    "    sub_func()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "func()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%inline notebook\n",
+    "import matplotlib.pyplot as plt\n",
+    "plt.plot(arange(7), [10000,100,100,200,300,500,100])\n",
+    "plt.show"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%notebook inline\n",
+    "import matplotlib.pyplot as plt\n",
+    "plt.plot(arange(7), [10000,100,100,200,300,500,100])\n",
+    "plt.show"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%notebook inline\n",
+    "import matplotlib.pyplot as plt\n",
+    "plt.plot(range(7), [10000,100,100,200,300,500,100])\n",
+    "plt.show"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%notebook inline\n",
+    "import matplotlib.pyplot as plt\n",
+    "plt.plot(range(7), [10000,100,100,200,300,500,100])\n",
+    "plt.ylim(400)\n",
+    "plt.show()"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

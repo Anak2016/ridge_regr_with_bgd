@@ -1,0 +1,13 @@
+> fix error when mse grow too large
+    : check if self.beta is reset and re-register
+    : stop the epoch and run the next epoch
+    :reset value every epoch
+> feed train and test data of cross validation into the model
+    : make sure to add bias for the 10th features
+> create loss function obecjt
+    :find a way to initialize beta for ridge regression
+> args.params_search = True
+    : run all the combination of possible lambda value
+> illustrate the effect of the tuning parameter on the cross validation error
+    :y-axis = cross validation error
+    :x-axis = lamda value1
